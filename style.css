@@ -73,6 +73,7 @@ body{
 .hamburger .icon{
     color: white;
     cursor: pointer;
+    font-size: 25px;
 }
 
 @media (min-width:500px)
