@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    user-select: none;
+}
+body{
+    background-color:  #061133;
+}
+.main-nav{
+    width: 100%;
+    height: 28px;
+    
+    position: relative;
+    padding: 5px 3%;
+}
+.main-nav .nav-content{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-content .logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.nav-content .logo h3{
+    color: white;
+    font-weight: 400;
+    font-size: 29px
+
+}
+.nav-content .logo p{
+    color: white;
+    letter-spacing: 1px;
+    font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+    font-size: 11px;
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.links ul li{
+    margin: 0 20px;
+}
+.links ul li a{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+.btns button{
+    width: 160px;
+    padding: 7px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.hamburger .icon{
+    color: white;
+    cursor: pointer;
+}
+
+@media (min-width:500px)
+{
+    .hamburger{
+        display: none;
+    }
+
+   
+
+}
+@media (max-width:500px)
+{
+    .hamburger{
+        display: block;
+    }
+    .logo{
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+   .btns{
+    display: none;
+   }
+
+}
